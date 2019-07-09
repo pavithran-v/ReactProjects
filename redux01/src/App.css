@@ -1,0 +1,33 @@
+.age
+{
+  text-align: center;
+  background-color: aquamarine;
+  margin: 10px;
+  padding: 10px;
+}
+
+.buttons
+{
+  text-align: center;
+  margin: 10px;
+  padding: 10px;  
+}
+
+.ageup,.agedown,.ageInc,.ageDesc
+{
+  margin: 10px;
+  padding: 10px;
+}
+
+.results
+{
+  text-align: center;
+}
+
+.list
+{
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  background-color: blanchedalmond;
+}
