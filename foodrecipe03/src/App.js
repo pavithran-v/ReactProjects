@@ -23,7 +23,7 @@ class  App extends React.Component
        const response = await fetch(`https://api.edamam.com/search?q=${this.props.search}&app_id=${APP_ID}&app_key=${APP_KEY}`);
        const data = await response.json();
        console.log(data.hits.length);
-       if(data.hits.length == 0)
+       if(data.hits.length === 0)
        {
          alert("Please Check Your Words")
        }
@@ -77,11 +77,13 @@ class  App extends React.Component
       
      return(
       <div className="App">
-        <form className="search-from" onSubmit={(e) => this.getSearch(e)}>
-          <input className="input" type="text" name="res" />
+        <form className="search-form" onSubmit={(e) => this.getSearch(e)}>
+          <input className="search-bar" type="text" name="res" />
           <button className="search-button" type="submit">Search</button>
         </form>
+        <div className="content">
         <Recipe />
+        </div>
       </div>
       
       
